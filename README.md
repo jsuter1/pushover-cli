@@ -4,6 +4,15 @@ A single-file Python script to send Pushover notifications via the command line.
 ## Dependencies
 A standard installation of python3 should be all that is needed.
 
+## Configuration
+Two lines in pushover.py will need to be changed in order to use it: the `APP_TOKEN` value and the `USER_KEY` value.
+
+To obtain a user key, log in or sign up for Pushover at https://pushover.net. Once logged in, "Your User Key" should be present on the right hand side. Replace `USER_KEY_HERE` with the user key shown.
+
+Next go to "Apps & Plugins" on the Pushover site and click "Create New Application". Enter a name, description, and optional URL, and select "Script" as the type. Once the application is created there should be a "API Token/Key" shown. Replace `APP_TOKEN_HERE` with the token shown.
+
+Once these two changes have been made the script should be ready for use.
+
 ## Usage and Examples
 
 The `--help` option gives a basic overview:
