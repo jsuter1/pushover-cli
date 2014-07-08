@@ -25,9 +25,14 @@ The `--help` option gives a basic overview:
       --sound SOUND        Message Sound. See https://pushover.net/api#sounds
       --quiet              Use return codes instead of text
 
-1. `./pushover.py "Hello world"` will send a notification with the system hostname as the title and "Hello world" as the message.
-2. `./pushover.py --title "Pushover Test" "Hello world"` will send a notification with the title "Pushover Test" and the message "Hello world".
-3. `./pushover.py --priority 2 "Emergency message"` will send a notification with emergency priority and the message "Emergency message"
+Send the notification "Hello world" (uses system hostname as notification title):  
+`./pushover.py "Hello world"`
+
+Send the notification "Hello world" with title "Pushover test":  
+`./pushover.py --title "Pushover Test" "Hello world"`
+
+Send the notification "Emergency message" with emergency (level 2) priority (uses system hostname as notification title):  
+`./pushover.py --priority 2 "Emergency message"`
 
 
 ## Practical Examples
